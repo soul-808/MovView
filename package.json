@@ -1,0 +1,24 @@
+{
+  "name": "movview",
+  "version": "1.0.0",
+  "description": "A simple movie information viewer",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soul-808/MovView.git"
+  },
+  "keywords": [
+    "movie",
+    "viewer",
+    "app"
+  ],
+  "author": "bward",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/soul-808/MovView/issues"
+  },
+  "homepage": "https://github.com/soul-808/MovView#readme"
+}
