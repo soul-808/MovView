@@ -6,7 +6,7 @@ Requirements:
 - MongoDB ver 4.4.0
 
 How to lanch: 
-  - Navigate to the root project directory in terminal
+  - Navigate to the root project directory from your terminal
   - Run command npm start
   
 Enjoy :)
