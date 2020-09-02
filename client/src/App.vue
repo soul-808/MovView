@@ -29,7 +29,7 @@ export default {
   methods: {
     getMovies: function () {
       var self = this;
-      axios.get('http://127.0.0.1:3000/api/movies/marvel').then((res) => {
+      axios.get('http://18.216.224.218:3000/api/movies/marvel').then((res) => {
         self.movies = res.data;
       })
     },
