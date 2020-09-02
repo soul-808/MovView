@@ -1,10 +1,12 @@
 <template>
   <div id="app">
-    <div v-if="movies.length === 0" class="center-btn" v-on:click="getMovies()">
-      <img id="enter-btn" class="float-efx" @mouseover="changeAnimate(false)" @mouseleave="changeAnimate(true)" src="./assets/bp-btn.png"/>
-      <h1>Click here for Marvel movies</h1>
+    <div class="portal">
+      <div v-if="movies.length === 0" class="center-btn" v-on:click="getMovies()">
+        <img id="enter-btn" class="float-efx" @mouseover="changeAnimate(false)" @mouseleave="changeAnimate(true)" src="./assets/bp-btn.png"/>
+        <h1>Click here for Marvel movies</h1>
+      </div>
+      <MovieInfo v-if="movies.length > 1" :movies-list="movies"/>
     </div>
-    <MovieInfo v-if="movies.length > 1" :movies-list="movies"/>
   </div>
 </template>
 
@@ -97,7 +99,14 @@ export default {
 .center-btn {
   margin: auto;
 }
-.enter-btn:hover, .center-btn:hover{
+.center-btn:hover{
   opacity: 0.7;
+}
+.portal {
+  max-width: 80vw;
+  margin: auto;
+}
+img#enter-btn {
+  max-width: 80vw;
 }
 </style>
